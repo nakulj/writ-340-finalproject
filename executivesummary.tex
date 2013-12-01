@@ -1,7 +1,15 @@
 \documentclass[titlepage]{article}
 
 \usepackage{graphicx}
+\usepackage{subcaption}
+\graphicspath{ {./images/} }
 \usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{cite}
+\usepackage{url}
+
+
+\newcommand{\figref}[1]{Figure ~\ref{fig:#1}}
 
 \title{Title}
 
@@ -12,7 +20,8 @@
 	Christine Noh\\ \emph{International Relations}
 }
 
-
+%ADD LETTERS
+%ADD RESUMES (pdfpages class)
 
 \begin{document}
 \maketitle
@@ -34,9 +43,11 @@
 
 Community Health Councils (CHC) is producing a report for the City of Los Angeles that recommends and details guidelines for complete streets design to be included in the Mobility Element of the city’s General Plan. This CHC report will be describing various best practices that can be implemented so that LA streets better adhere to the principles of complete streets. The following report details eight specific best practices that CHC may implement in their report to the City of Los Angeles. For each best practice, a general description is provided, as well as a discussion of its impact and cost. Additionally, each practice was evaluated based on its cost, impact, and ease of implementation to determine whether it is worth recommending as a design guideline in the Mobility Element. A usability index was created to more quantitatively evaluate these practices, and allowed for better comparison between them. In addition to complete street design, this report is also mindful of CHC’s overarching goals of improving health in South LA.
 
+\newpage
+
 \section{Best Practices}
-	\subsection{onepractice}
-	\subsection{anotherpractice}
+	\subsection{Chokers} \input{chokers.tex}
+	\subsection{Curb Radius} \input{curb-radius.tex}
 	\subsection{third}
 	\subsection{fourth}
 	\subsection{fifth}
@@ -53,6 +64,12 @@ Community Health Councils (CHC) is producing a report for the City of Los Angele
 
 %description, impact, cost
 
+\newpage
+
+\bibliography{citations}{}
+\bibliographystyle{plain}
+
+\includepdf{resumes/christine.pdf}
 
 
 \end{document}
