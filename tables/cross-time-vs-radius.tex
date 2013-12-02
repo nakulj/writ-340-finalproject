@@ -1,10 +1,12 @@
+% Booktabs require to add \usepackage{booktabs} to your document preamble
 \begin{table}[h]
 \centering
-    \begin{tabular}{cc}
-    Curb Radius (ft) & Time (s) \\ \hline
-    10                 & \phantom{0}7.9                             \\
-    15                 & \phantom{0}9.8                             \\
-    25                 & 14.1                            \\
-    \end{tabular}
-    \caption{Average pedestrian crossing times for various curb radii}\label{table:cross-time-vs-radius}
+\begin{tabular}{@{}rr@{}}
+\toprule
+\multicolumn{1}{l}{Curb Radius (ft)} & \multicolumn{1}{l}{Time (s)} \\ \midrule
+10                                   & 7.9                          \\
+15                                   & 9.8                          \\
+25                                   & 14.1                       \\ \bottomrule 
+\end{tabular}
+\caption{Average pedestrian crossing times for various curb radii}\label{table:cross-time-vs-radius}
 \end{table}
