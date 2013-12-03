@@ -1,0 +1,12 @@
+% Booktabs require to add \usepackage{booktabs} to your document preamble
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{@{}crrrr@{}}
+\toprule
+\multicolumn{1}{l}{Lane} & \multicolumn{1}{l}{Non-curb extension} & \multicolumn{1}{l}{Curb extension} & \multicolumn{1}{l}{\% difference} & \multicolumn{1}{l}{Sample Size} \\ \midrule
+Near                     & 64.9\%                                 & 66.7\%                             & 2.7\%                             & 234                             \\
+Far                      & 58.6\%                                 & 63.4\%                             & 7.7\%                             & 234                            \\
+\bottomrule
+\end{tabular}
+\caption{Percents of pedestrian crossings with yield. The results were found insignificant by the t-test.}\label{table:motorist-yielded}
+\end{table}

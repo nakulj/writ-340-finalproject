@@ -1,0 +1,12 @@
+% Booktabs require to add \usepackage{booktabs} to your document preamble
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{@{}crrrr@{}}
+\toprule
+\multicolumn{1}{l}{Lane} & \multicolumn{1}{l}{Non-curb extension} & \multicolumn{1}{l}{Curb extension} & \multicolumn{1}{l}{Difference} & \multicolumn{1}{l}{Sample Size} \\ \midrule
+Near                     & 2.58                                   & 1.81                               & -42.7 \%                            & 219                             \\
+Far                      & 2.36                                   & 1.76                               & -33.9  \%                           & 214                           \\
+\bottomrule 
+\end{tabular}
+\caption{Average number of vehicles passing before a pedestrian-cross. Results found significant by the t-test.}\label{table:vehicles-passed}
+\end{table}
