@@ -1,5 +1,6 @@
-\documentclass[titlepage]{article}
+\documentclass[titlepage,oneside]{article}
 
+\usepackage{todonotes}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \graphicspath{ {./images/} }
@@ -13,7 +14,7 @@
 
 \newcommand{\figref}[1]{Figure ~\ref{fig:#1}}
 
-\title{Title}
+\title{An Analysis of Best Practices in Traffic Calming}
 
 \author{
 	Jake Hermle\\ \emph{Civil Engineering} \and
@@ -22,15 +23,22 @@
 	Christine Noh\\ \emph{International Relations}
 }
 
+\date{6\textsuperscript{th} December, 2013}
+
 %ADD LETTERS
-%ADD RESUMES (pdfpages class)
 
 \begin{document}
+\listoftodos
+
+\newpage
+\todo[inline]{Letter to CHC}
+
 \maketitle
 
 \begin{abstract}
-
+\todo[inline]{Write the abstract}
 \end{abstract}
+
 
 \tableofcontents
 \newpage
@@ -55,18 +63,24 @@ Community Health Councils (CHC) is producing a report for the City of Los Angele
 \newpage
 	\subsection{Raised Crosswalks}
 		\input{raised-crosswalks.tex}
-	\subsection{fourth}
-	\subsection{fifth}
-	\subsection{sixth}
-	\subsection{seventh}
-	\subsection{eighth}
+\newpage
+	\subsection{Curb Extensions}
+		\todo[inline]{Nakul: Add the curb extensions section}
+	\subsection{Textured Pavements}
+		\todo[inline]{Jake: Add the textured pavements section}
+	\subsection{Dignified Zones}
+		\todo[inline]{Jake: Add the dignified zones section}
+	\subsection{Traffic Circles}
+		\todo[inline]{John: Add the traffic circles section}
+	\subsection{Midblock Crossings}
+		\todo[inline]{John: Add the midblock crossings section}
 
 \section{Analysis}
-	\subsection{Methodology}
-	\subsection{Rankings}
-	\subsection{Discussion}
+	\subsection{Methodology}\todo[inline]{Talk about the methodology we used}
+	\subsection{Rankings}\todo[inline]{Rank the practices}
+	\subsection{Discussion}\todo[inline]{Discuss the results}
 
-\section{Conclusion}
+\section{Conclusion}\todo[inline]{Conclude}
 
 %description, impact, cost
 
@@ -76,6 +90,11 @@ Community Health Councils (CHC) is producing a report for the City of Los Angele
 \bibliography{citations}{}
 \bibliographystyle{plain}
 
+\newpage
+
+\todo[inline]{Jake: Add your resume to the resumes subfolder}
+\includepdf{resumes/nakul.pdf}
+\todo[inline]{John: Add your resume to the resumes subfolder}
 \includepdf{resumes/christine.pdf}
 
 
