@@ -1,0 +1,30 @@
+% Please remember to add \use{multirow} to your document preamble in order to suppor multirow cells
+% Booktabs require to add \usepackage{booktabs} to your document preamble
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\multirow{2}{*}{Element}                  & \multicolumn{2}{l}{Estimate}                          \\ \cmidrule(l){2-3} 
+                                          & \multicolumn{1}{l}{Lower} & \multicolumn{1}{l}{Upper} \\
+\midrule
+
+Paving (textured or non-textured) (per square foot)         & \$5                   & \$16                  \\
+
+Concrete Sidewalk Removal and Replacement (per square foot) & \multicolumn{2}{c}{\$20}                          \\
+
+
+Pedestrian-Level Street Lights (ea.)            & \$3000                & \$5000                 \\
+Cobra Head Standard Lights (ea.)               & \multicolumn{2}{c}{\$10000}                       \\
+6’ Wide Bench (ea.)                           & \$1500                & \$3000                \\
+Bike Rack (ea.)                                 & \$600                 & \$1200                 \\
+Bollards (ea.)                                  & \$500                  & \$750                 \\
+24” Box Trees (ea.)                             & \multicolumn{2}{c}{\$1820 }                        \\
+Trash Cans (ea.)                                & \$800                 & \$1500                 \\
+Water Fountain (Aesthetic) (ea.)                & \$15,000               & \$50,000               \\
+Tree Grates (ea.)                               & \$680                  & \$750                  \\
+60 Day Maintenance for ½ mile of street (lump sum)   & \$3000           & \$4000       \\
+Signage (Standard vs. High Visibility) (ea.)    & \$300                & \$400               \\
+\bottomrule
+\end{tabular}
+\caption[Cost estimates of various elements of pedestrian zones]{Cost estimates of various elements of pedestrian zones \cite{PZ3}.}\label{table:pedestrian-zone-costs}
+\end{table}
