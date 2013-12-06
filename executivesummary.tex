@@ -1,6 +1,5 @@
 \documentclass[titlepage,oneside]{article}
 
-\usepackage{todonotes}
 \usepackage{graphicx}
 \usepackage{subcaption}
 \graphicspath{ {./images/} }
@@ -10,6 +9,8 @@
 \usepackage{url}
 \usepackage{multirow}
 \usepackage{booktabs}
+
+\setcounter{tocdepth}{2}
 
 \newcommand{\figref}[1]{Figure ~\ref{fig:#1}}
 
@@ -27,8 +28,6 @@
 
 \begin{document}
 
-\listoftodos
-
 \includepdf{letter.pdf}
 
 \maketitle
@@ -44,14 +43,16 @@
 \listoftables
 \newpage
 
-\section{Executive Summary}
-\input{executive-summary.tex}
-\todo[inline]{John: Do this section}
+\section{Background}
+\input{background.tex}
 \clearpage
 
-\section{Introduction and Background}
-\input{introduction-and-background.tex}
-\todo[inline]{John: Finish this section}
+\section{Introduction}
+\input{introduction.tex}
+\clearpage
+
+\section{Executive Summary}
+\input{executive-summary.tex}
 \clearpage
 
 \section{Best Practices}
@@ -95,8 +96,7 @@
 	\clearpage
 	
 	\subsection{Rankings}
-	\todo[inline]{Jake: Rank the practices}
-	\input{ranking.tex}
+	\input{tables/rankings.tex}
 	\clearpage
 	
 	\subsection{Discussion}
@@ -105,7 +105,6 @@
 
 \section{Conclusion}
 \input{conclusion.tex}
-\todo[inline]{Nakul: Conclude}
 \clearpage
 
 \nocite{*}
